@@ -1,1 +1,66 @@
 Ubuntu Course
+| Command                    | Description                                |
+| -------------------------- | ------------------------------------------ |
+| `pwd`                      | Show current directory path                |
+| `ls`                       | List files and folders                     |
+| `ls -la`                   | Show detailed files including hidden files |
+| `cd foldername`            | Move into a folder                         |
+| `cd ..`                    | Move one directory back                    |
+| `cd /`                     | Go to root directory                       |
+| `cd ~`                     | Go to home directory                       |
+| `mkdir foldername`         | Create a new folder                        |
+| `rmdir foldername`         | Remove an empty folder                     |
+| `touch filename.txt`       | Create a new empty file                    |
+| `nano filename.txt`        | Open file in Nano text editor              |
+| `cat filename.txt`         | Display file content                       |
+| `clear`                    | Clear terminal screen                      |
+| `rm filename.txt`          | Delete a file                              |
+| `rm -r foldername`         | Delete folder and contents                 |
+| `cp file1 file2`           | Copy file                                  |
+| `mv file1 file2`           | Move or rename file                        |
+| `history`                  | Show previous commands                     |
+| `whoami`                   | Show current username                      |
+| `sudo command`             | Run command as administrator               |
+| `apt update`               | Update package list                        |
+| `apt upgrade`              | Upgrade installed packages                 |
+| `sudo apt install package` | Install software package                   |
+| `top`                      | Show running processes                     |
+| `ps aux`                   | List all running processes                 |
+| `kill PID`                 | Stop a process using PID                   |
+| `df -h`                    | Show disk storage usage                    |
+| `free -h`                  | Show RAM usage                             |
+| `ip a`                     | Show IP/network details                    |
+| `ping google.com`          | Test internet connection                   |
+| `man command`              | Show manual/help for command               |
+| `echo "text"`              | Print text in terminal                     |
+| `find . -name file.txt`    | Search file in current directory           |
+| `chmod +x file.sh`         | Make file executable                       |
+| `./file.sh`                | Run executable script                      |
+| `wget URL`                 | Download file from internet                |
+| `unzip file.zip`           | Extract ZIP file                           |
+----------------------------------------------------------------
+
+
+File Editing in Nano
+
+
+| Shortcut   | Description      |
+| ---------- | ---------------- |
+| `CTRL + O` | Save file        |
+| `ENTER`    | Confirm save     |
+| `CTRL + X` | Exit Nano editor |
+| `CTRL + K` | Cut line         |
+| `CTRL + U` | Paste line       |
+
+
+Example Workflow
+
+cd /
+ls
+mkdir myproject
+cd myproject
+touch app.py
+nano app.py
+ls -la
+pwd
+clear
