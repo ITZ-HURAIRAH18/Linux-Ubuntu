@@ -64,3 +64,128 @@ nano app.py
 ls -la
 pwd
 clear
+
+
+Getting System Information in Ubuntu 
+
+Here are some useful **system information commands** in Ubuntu/Linux with short descriptions:
+
+```bash
+df
+```
+
+Shows disk space usage of all mounted drives.
+
+```bash
+df -h
+```
+
+Shows disk space in human-readable format (GB, MB).
+
+```bash
+cat /proc/cpuinfo
+```
+
+Displays detailed CPU information.
+
+```bash
+lscpu
+```
+
+Shows CPU architecture and processor details in a clean format.
+
+```bash
+free -h
+```
+
+Displays RAM and swap memory usage in human-readable format.
+
+```bash
+uname -a
+```
+
+Shows system/kernel information.
+
+```bash
+hostnamectl
+```
+
+Displays hostname, OS version, kernel, and architecture.
+
+```bash
+top
+```
+
+Real-time system monitoring (CPU, RAM, processes).
+
+```bash
+htop
+```
+
+Advanced colorful version of `top` (may require install).
+
+```bash
+neofetch
+```
+
+Shows stylish system information summary (may require install).
+
+```bash
+lsblk
+```
+
+Lists storage devices and partitions.
+
+```bash
+du -sh foldername
+```
+
+Shows size of a specific folder.
+
+```bash
+uptime
+```
+
+Shows system running time and load.
+
+```bash
+whoami
+```
+
+Displays current logged-in user.
+
+```bash
+ip a
+```
+
+Shows IP address and network interfaces.
+
+```bash
+ifconfig
+```
+
+Older command to view network info (may require net-tools package).
+
+```bash
+ps aux
+```
+
+Lists all running processes.
+
+```bash
+sudo fdisk -l
+```
+
+Shows disk partitions and storage details.
+
+```bash
+vmstat
+```
+
+Displays system performance statistics.
+
+```bash
+dmesg
+```
+
+Shows kernel and boot logs.
