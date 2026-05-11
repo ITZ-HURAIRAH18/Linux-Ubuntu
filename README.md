@@ -1,60 +1,96 @@
-Ubuntu Course
-| Command                    | Description                                |
-| -------------------------- | ------------------------------------------ |
-| `pwd`                      | Show current directory path                |
-| `ls`                       | List files and folders                     |
-| `ls -la`                   | Show detailed files including hidden files |
-| `cd foldername`            | Move into a folder                         |
-| `cd ..`                    | Move one directory back                    |
-| `cd /`                     | Go to root directory                       |
-| `cd ~`                     | Go to home directory                       |
-| `mkdir foldername`         | Create a new folder                        |
-| `rmdir foldername`         | Remove an empty folder                     |
-| `touch filename.txt`       | Create a new empty file                    |
-| `nano filename.txt`        | Open file in Nano text editor              |
-| `cat filename.txt`         | Display file content                       |
-| `clear`                    | Clear terminal screen                      |
-| `rm filename.txt`          | Delete a file                              |
-| `rm -r foldername`         | Delete folder and contents                 |
-| `cp file1 file2`           | Copy file                                  |
-| `mv file1 file2`           | Move or rename file                        |
-| `history`                  | Show previous commands                     |
-| `whoami`                   | Show current username                      |
-| `sudo command`             | Run command as administrator               |
-| `apt update`               | Update package list                        |
-| `apt upgrade`              | Upgrade installed packages                 |
-| `sudo apt install package` | Install software package                   |
-| `top`                      | Show running processes                     |
-| `ps aux`                   | List all running processes                 |
-| `kill PID`                 | Stop a process using PID                   |
-| `df -h`                    | Show disk storage usage                    |
-| `free -h`                  | Show RAM usage                             |
-| `ip a`                     | Show IP/network details                    |
-| `ping google.com`          | Test internet connection                   |
-| `man command`              | Show manual/help for command               |
-| `echo "text"`              | Print text in terminal                     |
-| `find . -name file.txt`    | Search file in current directory           |
-| `chmod +x file.sh`         | Make file executable                       |
-| `./file.sh`                | Run executable script                      |
-| `wget URL`                 | Download file from internet                |
-| `unzip file.zip`           | Extract ZIP file                           |
-----------------------------------------------------------------
+# Ubuntu Course
 
+This guide provides a comprehensive list of essential Ubuntu commands, organized into categories for easy reference. Use this as a quick guide to navigate and manage your Ubuntu system efficiently.
 
-File Editing in Nano
+---
 
+## Basic Navigation Commands
 
-| Shortcut   | Description      |
-| ---------- | ---------------- |
-| `CTRL + O` | Save file        |
-| `ENTER`    | Confirm save     |
-| `CTRL + X` | Exit Nano editor |
-| `CTRL + K` | Cut line         |
-| `CTRL + U` | Paste line       |
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `pwd`                     | Show current directory path                |
+| `ls`                      | List files and folders                     |
+| `ls -la`                  | Show detailed files including hidden files |
+| `cd foldername`           | Move into a folder                         |
+| `cd ..`                   | Move one directory back                    |
+| `cd /`                    | Go to root directory                       |
+| `cd ~`                    | Go to home directory                       |
 
+---
 
-Example Workflow
+## File and Folder Management
 
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `mkdir foldername`        | Create a new folder                        |
+| `rmdir foldername`        | Remove an empty folder                     |
+| `touch filename.txt`      | Create a new empty file                    |
+| `nano filename.txt`       | Open file in Nano text editor              |
+| `cat filename.txt`        | Display file content                       |
+| `rm filename.txt`         | Delete a file                              |
+| `rm -r foldername`        | Delete folder and contents                 |
+| `cp file1 file2`          | Copy file                                  |
+| `mv file1 file2`          | Move or rename file                        |
+
+---
+
+## System Information Commands
+
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `df -h`                   | Show disk storage usage in human-readable format |
+| `free -h`                 | Show RAM usage                             |
+| `uname -a`                | Show system/kernel information             |
+| `hostnamectl`             | Display hostname, OS version, and architecture |
+| `uptime`                  | Show system running time and load          |
+| `whoami`                  | Display current logged-in user             |
+| `ip a`                    | Show IP address and network interfaces     |
+| `ps aux`                  | List all running processes                 |
+| `top`                     | Show running processes in real-time        |
+| `htop`                    | Advanced colorful version of `top` (may require install) |
+| `lsblk`                   | List storage devices and partitions        |
+| `du -sh foldername`       | Show size of a specific folder             |
+| `sudo fdisk -l`           | Show disk partitions and storage details   |
+
+---
+
+## Package Management Commands
+
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `sudo apt update`         | Update package list                        |
+| `sudo apt upgrade`        | Upgrade installed packages                 |
+| `sudo apt install package`| Install software package                   |
+
+---
+
+## Networking Commands
+
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `ping google.com`         | Test internet connection                   |
+| `wget URL`                | Download file from internet                |
+| `ifconfig`                | View network info (may require net-tools package) |
+
+---
+
+## File Editing in Nano
+
+| **Shortcut**              | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `CTRL + O`                | Save file                                  |
+| `ENTER`                   | Confirm save                               |
+| `CTRL + X`                | Exit Nano editor                           |
+| `CTRL + K`                | Cut line                                   |
+| `CTRL + U`                | Paste line                                 |
+
+---
+
+## Example Workflow
+
+Here is an example workflow to create and manage a project:
+
+```bash
 cd /
 ls
 mkdir myproject
@@ -64,128 +100,20 @@ nano app.py
 ls -la
 pwd
 clear
-
-
-Getting System Information in Ubuntu 
-
-Here are some useful **system information commands** in Ubuntu/Linux with short descriptions:
-
-```bash
-df
 ```
 
-Shows disk space usage of all mounted drives.
+---
 
-```bash
-df -h
-```
+## Advanced System Commands
 
-Shows disk space in human-readable format (GB, MB).
+| **Command**               | **Description**                            |
+|---------------------------|--------------------------------------------|
+| `cat /proc/cpuinfo`       | Display detailed CPU information           |
+| `lscpu`                   | Show CPU architecture and processor details |
+| `vmstat`                  | Display system performance statistics      |
+| `dmesg`                   | Show kernel and boot logs                  |
+| `neofetch`                | Show stylish system information summary (may require install) |
 
-```bash
-cat /proc/cpuinfo
-```
+---
 
-Displays detailed CPU information.
-
-```bash
-lscpu
-```
-
-Shows CPU architecture and processor details in a clean format.
-
-```bash
-free -h
-```
-
-Displays RAM and swap memory usage in human-readable format.
-
-```bash
-uname -a
-```
-
-Shows system/kernel information.
-
-```bash
-hostnamectl
-```
-
-Displays hostname, OS version, kernel, and architecture.
-
-```bash
-top
-```
-
-Real-time system monitoring (CPU, RAM, processes).
-
-```bash
-htop
-```
-
-Advanced colorful version of `top` (may require install).
-
-```bash
-neofetch
-```
-
-Shows stylish system information summary (may require install).
-
-```bash
-lsblk
-```
-
-Lists storage devices and partitions.
-
-```bash
-du -sh foldername
-```
-
-Shows size of a specific folder.
-
-```bash
-uptime
-```
-
-Shows system running time and load.
-
-```bash
-whoami
-```
-
-Displays current logged-in user.
-
-```bash
-ip a
-```
-
-Shows IP address and network interfaces.
-
-```bash
-ifconfig
-```
-
-Older command to view network info (may require net-tools package).
-
-```bash
-ps aux
-```
-
-Lists all running processes.
-
-```bash
-sudo fdisk -l
-```
-
-Shows disk partitions and storage details.
-
-```bash
-vmstat
-```
-
-Displays system performance statistics.
-
-```bash
-dmesg
-```
-
-Shows kernel and boot logs.
+Feel free to explore these commands and practice them to become proficient in using Ubuntu.
